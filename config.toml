@@ -1,6 +1,8 @@
+# When I have a non-crappy home internet setup with decent DHCP/DNS support I
+# can have Actual Hostnames in here.
+
 [appliances]
 
-  # one day DNS will exist
   [appliances.Washer]
   name = 'washer'
   ip = '192.168.0.68'
