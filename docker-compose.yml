@@ -1,0 +1,10 @@
+version: "3"
+services:
+  vzug:
+    container_name: vzug
+    image: vzug
+    working_dir: /code
+    volumes:
+      - .:/code
+    command: python3 poll.py
+    restart: unless-stopped

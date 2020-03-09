@@ -1,0 +1,21 @@
+[appliances]
+
+  # one day DNS will exist
+  [appliances.Washer]
+  name = 'washer'
+  ip = '192.168.0.68'
+
+  [appliances.Dryer]
+  name = 'dryer'
+  ip = '192.168.0.50'
+
+  [appliances.Oven]
+  name = 'oven'
+  ip = '192.168.0.96'
+
+[database]
+host = '192.168.0.2'
+port = 8086
+user = 'mon'
+pass = 'mon'
+name = 'telegraf'  # FIXME
