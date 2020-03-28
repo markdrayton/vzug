@@ -8,3 +8,7 @@ services:
       - .:/code
     command: python3 poll.py
     restart: unless-stopped
+    logging:
+      options:
+        max-size: "2m"
+        max-file: "5"
