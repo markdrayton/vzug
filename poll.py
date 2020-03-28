@@ -82,7 +82,7 @@ def parse_args():
 
 
 def instantiate(cls, data):
-    return getattr(sys.modules[__name__], cls)(data['name'], data['ip'])
+    return getattr(sys.modules[__name__], cls)(data['name'], data['host'])
 
 
 def main():

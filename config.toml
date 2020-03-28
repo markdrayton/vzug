@@ -5,18 +5,18 @@
 
   [appliances.Washer]
   name = 'washer'
-  ip = '192.168.0.68'
+  host = 'washer.lan'
 
-  [appliances.Dryer]
-  name = 'dryer'
-  ip = '192.168.0.50'
+#  [appliances.Dryer]
+#  name = 'dryer'
+#  host = '192.168.0.50'
 
   [appliances.Oven]
   name = 'oven'
-  ip = '192.168.0.96'
+  host = 'oven.lan'
 
 [database]
-host = '192.168.0.2'
+host = 'influxdb.lan'
 port = 8086
 user = 'mon'
 pass = 'mon'
