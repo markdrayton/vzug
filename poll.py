@@ -121,7 +121,7 @@ def main():
         try:
             if not client.write_points(points):
                 logging.error('failed to write points!')
-        except requests.RequestException as e:
+        except Exception as e:
             logging.error(f'exception while writing points: {e}')
 
         time.sleep(60 - (time.time() - start))
