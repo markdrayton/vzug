@@ -91,8 +91,9 @@ def main():
     config = toml.load(open(args.config_file))
     appliances = [instantiate(cls, data) for cls, data in config['appliances'].items()]
 
+    start = time.time()
+
     while True:
-        start = time.time()
         ts = time.strftime('%Y-%m-%d %H:%M:%SZ', time.gmtime())
 
         points = []
@@ -124,7 +125,7 @@ def main():
         except Exception as e:
             logging.error(f'exception while writing points: {e}')
 
-        time.sleep(60 - (time.time() - start))
+        time.sleep(60.0 - ((time.time() - start) % 60.0))
 
 if __name__ == '__main__':
     main()
